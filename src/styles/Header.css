@@ -1,0 +1,13 @@
+.header {
+  background-color: #1a4d4d;
+  padding: 25px 50px;
+}
+
+.logo {
+  color: white;
+  font-size: 68px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 1px;
+  font-family: "Oswald", sans-serif;
+}
