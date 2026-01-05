@@ -1,10 +1,6 @@
 import type { ReactNode } from "react";
 import PageLayout from "../PageLayout/PageLayout";
-import "./PageList.css";
 
-/* ================================
-   TIPOS
-================================ */
 type Field<T> = {
   key: keyof T;
   label: string;
@@ -27,18 +23,30 @@ function PageList<T extends object>({
   return (
     <PageLayout>
       <div className="page-list">
-        {items.map((item, index) => (
-          <div key={index} className="page-item">
-            {fields.map((field) => (
-              <div key={String(field.key)}>
-                <strong>{field.label}</strong>
-                <div>{String(item[field.key])}</div>
-              </div>
-            ))}
+        {/* HEADER ÚNICO */}
+        <div className="page-list-header">
+          {fields.map((field) => (
+            <span key={String(field.key)}>{field.label}</span>
+          ))}
+          {renderExtra && <span />}
+        </div>
 
-            {renderExtra && <div>{renderExtra(item)}</div>}
-          </div>
-        ))}
+        {/* ITENS */}
+        <div className="page-list-body">
+          {items.map((item, index) => (
+            <div key={index} className="page-item">
+              {fields.map((field) => (
+                <span key={String(field.key)}>
+                  {String(item[field.key])}
+                </span>
+              ))}
+
+              {renderExtra && (
+                <span>{renderExtra(item)}</span>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </PageLayout>
   );
