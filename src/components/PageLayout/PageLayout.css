@@ -1,0 +1,36 @@
+.page-container {
+  min-height: calc(100vh - 98px);
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.page-panel {
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.page-header {
+  background-color: #123f3b;
+  padding: 24px;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.page-subheader {
+  background-color: #355f5a;
+  padding: 10px 24px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0f1f1e;
+}
+
+.page-content {
+  padding: 20px 24px;
+}

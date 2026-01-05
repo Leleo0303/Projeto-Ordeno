@@ -1,39 +1,30 @@
-import "../styles/Caminhao.css";
+import PageLayout from "../components/PageLayout/PageLayout";
+import List from "../components/List/List";
+
+interface Rota {
+  destino: string;
+  distancia: string;
+  tempo: string;
+}
 
 function Caminhao() {
+  const columns = [
+    { key: "destino", label: "Destino" },
+    { key: "distancia", label: "Distância" },
+    { key: "tempo", label: "Tempo" },
+  ] as const;
+
+  const data: Rota[] = [
+    { destino: "Morro do Alemão", distancia: "12053km", tempo: "13:52:00" },
+    { destino: "Morro do Alemão", distancia: "12053km", tempo: "13:52:00" },
+    { destino: "Morro do Alemão", distancia: "12053km", tempo: "13:52:00" },
+    { destino: "Morro do Alemão", distancia: "12053km", tempo: "13:52:00" },
+  ];
+
   return (
-    <div className="caminhao-container">
-      <div className="caminhao-panel">
-
-        {/* Header */}
-        <div className="caminhao-header">
-          <h1>Ordeno</h1>
-        </div>
-
-        {/* Subheader */}
-        <div className="caminhao-subheader">
-          <span>Rotas</span>
-        </div>
-
-        {/* Lista */}
-        <div className="caminhao-list">
-          <div className="caminhao-list-header">
-            <span>Destino</span>
-            <span>Distância</span>
-            <span>Tempo</span>
-          </div>
-
-          {Array.from({ length: 4 }).map((_, index) => (
-            <div className="caminhao-list-row" key={index}>
-              <span>Morro do Alemão</span>
-              <span>12053km</span>
-              <span>13:52:00</span>
-            </div>
-          ))}
-        </div>
-
-      </div>
-    </div>
+    <PageLayout title="Ordeno" subtitle="Rotas">
+      <List<Rota> columns={columns} data={data} />
+    </PageLayout>
   );
 }
 
