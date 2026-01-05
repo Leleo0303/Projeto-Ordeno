@@ -22,7 +22,7 @@ function Caminhao() {
   ];
 
   return (
-    <PageLayout title="Ordeno" subtitle="Rotas">
+    <PageLayout subtitle="Rotas">
       <List<Rota> columns={columns} data={data} />
     </PageLayout>
   );
