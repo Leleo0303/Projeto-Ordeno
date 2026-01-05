@@ -1,38 +1,33 @@
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
-
+/* ================================
+   HEADER PRINCIPAL
+================================ */
 .app-header {
   width: 100%;
-  background-color: #123f3b;
-  color: #ffffff;
+  background-color: var(--color-primary); /* fundo principal da marca */
 }
 
-/* Header principal */
 .app-header-main {
-  padding: 16px 24px;
+  padding: var(--space-lg) var(--space-xl); /* espaçamento interno do header */
 }
 
 .app-header-main h1 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 1000;
+  font-size: var(--font-size-xxl); /* título grande */
+  font-weight: 700; /* destaque do título */
+  line-height: 1;
+  color: var(--color-on-primary); /* contraste alto sobre primary */
 }
 
-/* Subheader */
+/* ================================
+   SUBHEADER
+================================ */
 .app-header-sub {
-  background-color: #355f5a;
-  padding: 10px 24px;
+  background-color: var(--color-primary-muted); /* subheader mais suave */
+  padding: var(--space-sm) var(--space-xl);
 }
 
 .app-header-sub span {
-  font-size: 18px;
+  font-size: var(--font-size-sm); /* texto secundário menor */
   font-weight: 500;
-  color: #0f1f1e;
+  color: var(--color-on-primary-muted); /* contraste médio sobre primary-muted */
 }

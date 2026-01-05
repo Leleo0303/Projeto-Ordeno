@@ -28,7 +28,7 @@ const rotas: readonly Rota[] = [
 
 function Caminhao({ setSubtitle }: CaminhaoProps) {
   useEffect(() => {
-    setSubtitle("Cadastro de Caminhão");
+    setSubtitle("CADASTRO DE CAMINHÃO");
     return () => setSubtitle(undefined);
   }, [setSubtitle]);
 

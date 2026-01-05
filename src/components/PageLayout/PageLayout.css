@@ -1,7 +1,5 @@
 .page-layout {
-  min-height: calc(100vh - 98px);
-  padding: 10px;
-  background-color: #f5f5f5;
+  min-height: calc(100vh - 98px); /* altura mínima da página, descontando header */
+  padding: var(--space-md);       /* padding padronizado com tokens */
+  background-color: var(--color-bg-app); /* fundo da página usando escala neutra */
 }
-
-
