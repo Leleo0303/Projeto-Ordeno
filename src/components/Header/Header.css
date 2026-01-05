@@ -16,13 +16,13 @@ body {
 
 /* Header principal */
 .app-header-main {
-  padding: 20px 24px;
+  padding: 16px 24px;
 }
 
 .app-header-main h1 {
   margin: 0;
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 48px;
+  font-weight: 1000;
 }
 
 /* Subheader */

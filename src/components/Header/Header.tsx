@@ -1,15 +1,14 @@
 import "./Header.css";
 
 interface HeaderProps {
-  title: string;
   subtitle?: string;
 }
 
-function Header({ title, subtitle }: HeaderProps) {
+function Header({ subtitle }: HeaderProps) {
   return (
     <header className="app-header">
       <div className="app-header-main">
-        <h1>{title}</h1>
+        <h1>Ordeno</h1>
       </div>
 
       {subtitle && (

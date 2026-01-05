@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import PageLayout from "../PageLayout/PageLayout";
+import "./PageList.css";
 
 type Field<T> = {
   key: keyof T;

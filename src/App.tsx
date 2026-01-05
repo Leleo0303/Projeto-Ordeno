@@ -9,7 +9,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header title="Ordeno" subtitle={subtitle} />
+      <Header subtitle={subtitle} />
 
       <Routes>
         <Route path="/" element={<Home />} />

@@ -15,6 +15,15 @@ const rotas: readonly Rota[] = [
   { destino: "São Paulo", distancia: "430 km", tempo: "6h" },
   { destino: "Campinas", distancia: "95 km", tempo: "1h30" },
   { destino: "Ribeirão Preto", distancia: "315 km", tempo: "4h" },
+  { destino: "São Paulo", distancia: "430 km", tempo: "6h" },
+  { destino: "Campinas", distancia: "95 km", tempo: "1h30" },
+  { destino: "Ribeirão Preto", distancia: "315 km", tempo: "4h" },
+  { destino: "São Paulo", distancia: "430 km", tempo: "6h" },
+  { destino: "Campinas", distancia: "95 km", tempo: "1h30" },
+  { destino: "Ribeirão Preto", distancia: "315 km", tempo: "4h" },
+  { destino: "São Paulo", distancia: "430 km", tempo: "6h" },
+  { destino: "Campinas", distancia: "95 km", tempo: "1h30" },
+  { destino: "Ribeirão Preto", distancia: "315 km", tempo: "4h" },
 ];
 
 function Caminhao({ setSubtitle }: CaminhaoProps) {
