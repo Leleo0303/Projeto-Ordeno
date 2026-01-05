@@ -1,0 +1,31 @@
+.page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* itens mais próximos */
+}
+
+/* Item mais “quadrado”, estilo linha */
+.page-item {
+  background-color: #f0f0f0;
+  padding: 20px 28px;
+  border-radius: 4px; /* menos arredondado */
+  font-size: 18px;
+  color: #333;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* efeito zebra (como na imagem) */
+.page-item:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+.page-item strong {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+  color: #000;
+}

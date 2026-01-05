@@ -1,0 +1,28 @@
+.app-header {
+  width: 100%;
+  background-color: #123f3b;
+  color: #ffffff;
+}
+
+/* Header principal */
+.app-header-main {
+  padding: 20px 24px;
+}
+
+.app-header-main h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/* Subheader */
+.app-header-sub {
+  background-color: #355f5a;
+  padding: 10px 24px;
+}
+
+.app-header-sub span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0f1f1e;
+}
