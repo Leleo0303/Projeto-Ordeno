@@ -1,31 +1,66 @@
 .caminhao-container {
   min-height: calc(100vh - 98px);
   background-color: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
+  padding: 20px;
 }
 
-.caminhao-content {
-  background-color: white;
-  padding: 60px 80px;
-  border-radius: 12px;
+.caminhao-panel {
+  background-color: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  max-width: 600px;
 }
 
-.caminhao-title {
-  font-size: 32px;
-  font-weight: 600;
-  color: #1a4d4d;
-  margin: 0 0 20px 0;
+/* Header principal */
+.caminhao-header {
+  background-color: #123f3b;
+  padding: 24px;
 }
 
-.caminhao-text {
-  font-size: 18px;
-  color: #666;
-  line-height: 1.6;
+.caminhao-header h1 {
   margin: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* Subheader */
+.caminhao-subheader {
+  background-color: #355f5a;
+  padding: 10px 24px;
+  color: #0f1f1e;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Lista */
+.caminhao-list {
+  padding: 20px 24px;
+}
+
+/* Cabeçalho da tabela */
+.caminhao-list-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  font-weight: 600;
+  padding: 12px 0;
+}
+
+/* Linhas */
+.caminhao-list-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 16px 0;
+  border-top: 1px solid #eaeaea;
+  font-size: 16px;
+}
+
+/* Efeito zebra */
+.caminhao-list-row:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.caminhao-list-row span,
+.caminhao-list-header span {
+  padding-left: 8px;
 }
